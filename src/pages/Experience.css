@@ -1,0 +1,231 @@
+.experience-section {
+  width: 90%;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 2rem 0;
+  scroll-margin-top: 100px;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-card {
+  background: linear-gradient(135deg, rgba(115, 35, 189, 0.8), rgba(80, 20, 150, 0.8));
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(149, 71, 222, 0.3);
+  display: flex;
+  gap: 2rem;
+}
+
+.experience-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 15px 40px rgba(149, 71, 222, 0.5);
+  border-color: rgb(149, 71, 222);
+}
+
+.exp-icon {
+  font-size: 3.5rem;
+  min-width: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.exp-content {
+  flex: 1;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.exp-header h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.exp-header h4 {
+  color: rgb(149, 71, 222);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.type-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.type-badge.internship {
+  background-color: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.type-badge.leadership {
+  background-color: rgba(241, 196, 15, 0.2);
+  color: #f1c40f;
+  border: 1px solid #f1c40f;
+}
+
+.exp-info {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.exp-info p {
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exp-description {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.responsibilities h5,
+.tech-used h5 {
+  color: rgb(149, 71, 222);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.responsibilities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.responsibilities ul li {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0.6rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.responsibilities ul li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: rgb(149, 71, 222);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.tech-used {
+  margin-top: 1.5rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  padding: 0.4rem 0.8rem;
+  background: rgba(149, 71, 222, 0.3);
+  border: 1px solid rgb(149, 71, 222);
+  border-radius: 15px;
+  color: white;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 968px) {
+  .experience-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .exp-icon {
+    font-size: 3rem;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exp-info {
+    justify-content: center;
+  }
+
+  .responsibilities ul li {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-section {
+    width: 95%;
+    margin: 60px auto;
+    padding: 1.5rem 0;
+  }
+
+  .section-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .experience-card {
+    padding: 1.8rem;
+    border-radius: 18px;
+  }
+
+  .experience-card:active {
+    transform: translateY(-3px);
+  }
+
+  .exp-header h3 {
+    font-size: 1.35rem;
+  }
+
+  .exp-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .exp-meta {
+    font-size: 0.9rem;
+  }
+
+  .exp-description {
+    font-size: 0.95rem;
+  }
+
+  .exp-highlights li {
+    font-size: 0.9rem;
+    padding-left: 0.3rem;
+  }
+
+  .exp-skills {
+    gap: 0.6rem;
+  }
+
+  .skill-badge {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}

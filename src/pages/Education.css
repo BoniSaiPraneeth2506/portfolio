@@ -1,0 +1,388 @@
+.education-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 2rem 0;
+  scroll-margin-top: 100px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #00d4ff, rgb(149, 71, 222));
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: gray;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, #00d4ff, rgb(149, 71, 222));
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timeline-item.left {
+  left: 0;
+  padding-right: 4rem;
+}
+
+.timeline-item.right {
+  left: 50%;
+  padding-left: 4rem;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 2rem;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #00d4ff, rgb(149, 71, 222));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
+  z-index: 2;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item.left .timeline-icon {
+  right: -30px;
+}
+
+.timeline-item.right .timeline-icon {
+  left: -30px;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1.5px solid rgba(0, 212, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(149, 71, 222, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(149, 71, 222, 0.4);
+  border-color: rgb(149, 71, 222);
+}
+
+.education-card:hover::before {
+  opacity: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-header h3 {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.status-badge {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.status-badge.ongoing {
+  background-color: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  border: 1px solid #3498db;
+}
+
+.status-badge.completed {
+  background-color: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+.institution-info {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.institution-info p {
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0.7rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.institution-info .institution {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.info-icon {
+  color: rgb(149, 71, 222);
+  font-size: 1rem;
+}
+
+.cgpa {
+  color: #f39c12 !important;
+  font-weight: 600;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.highlights h4 {
+  color: rgb(149, 71, 222);
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.highlights ul li {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0.6rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.5;
+}
+
+.bullet {
+  color: rgb(149, 71, 222);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .education-section {
+    width: 95%;
+  }
+
+  .timeline-container::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 0;
+    left: 0 !important;
+  }
+
+  .timeline-item.right {
+    padding-left: 70px;
+  }
+
+  .timeline-icon {
+    left: 0 !important;
+    right: auto !important;
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+
+  .section-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .education-section {
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 0.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+
+  .section-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .timeline-container {
+    padding: 0;
+  }
+
+  .timeline-container::before {
+    display: none;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    left: 0 !important;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    padding: 0;
+  }
+
+  .timeline-icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+    margin: 0 auto 1rem;
+    left: auto !important;
+    right: auto !important;
+    display: flex;
+  }
+
+  .education-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .card-header h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .status-badge {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .institution-info {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 12px;
+  }
+
+  .institution-info p {
+    font-size: 0.9rem;
+    margin: 0.6rem 0;
+    justify-content: flex-start;
+  }
+
+  .institution-info .institution {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .info-icon {
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  .highlights h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .highlights ul {
+    margin-left: 0;
+  }
+
+  .highlights ul li {
+    font-size: 0.85rem;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+    padding-left: 1.5rem;
+  }
+
+  .bullet {
+    font-size: 1.1rem;
+  }
+}

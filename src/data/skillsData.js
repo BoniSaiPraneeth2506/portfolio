@@ -1,0 +1,45 @@
+export const skillsData = {
+  programmingLanguages: [
+    { name: 'C', icon: '💻' },
+    { name: 'C++', icon: '⚙️' },
+    { name: 'Java', icon: '☕' },
+    { name: 'Python', icon: '🐍' },
+    { name: 'JavaScript', icon: '⚡' },
+  ],
+  frontend: [
+    { name: 'HTML5', icon: '🌐' },
+    { name: 'CSS3', icon: '🎨' },
+    { name: 'Tailwind CSS', icon: '💨' },
+    { name: 'React.js', icon: '⚛️' },
+    { name: 'React Native', icon: '📱' },
+    { name: 'NativeWind', icon: '🌊' },
+  ],
+  backend: [
+    { name: 'Node.js', icon: '🟢' },
+    { name: 'Express.js', icon: '🚂' },
+    { name: 'Spring', icon: '🍃' },
+    { name: 'Spring Boot', icon: '🚀' },
+    { name: 'REST APIs', icon: '🔌' },
+  ],
+  databases: [
+    { name: 'MongoDB', icon: '🍃' },
+    { name: 'SQL', icon: '🗄️' },
+    { name: 'PostgreSQL', icon: '🐘' },
+  ],
+  tools: [
+    { name: 'VS Code', icon: '💙' },
+    { name: 'GitHub', icon: '🐙' },
+    { name: 'IntelliJ IDEA', icon: '🧠' },
+    { name: 'Git', icon: '📚' },
+    { name: 'Socket.IO', icon: '🔌' },
+  ],
+  concepts: [
+    { name: 'Data Structures', icon: '🗂️' },
+    { name: 'Algorithms', icon: '🧮' },
+    { name: 'OOP', icon: '🎯' },
+    { name: 'MERN Stack', icon: '⚡' },
+    { name: 'Full Stack Development', icon: '🏗️' },
+    { name: 'RESTful APIs', icon: '🔗' },
+    { name: 'WebSocket', icon: '🌐' },
+  ],
+};

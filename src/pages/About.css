@@ -1,0 +1,256 @@
+.about-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 2rem 0;
+  scroll-margin-top: 100px;
+}
+
+.about-container {
+  margin-top: 3rem;
+}
+
+.intro-card {
+  background: linear-gradient(135deg, rgba(115, 35, 189, 0.8), rgba(80, 20, 150, 0.8));
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(149, 71, 222, 0.3);
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(149, 71, 222, 0.1) 0%, transparent 70%);
+  animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.about-icon {
+  font-size: 4rem;
+  color: rgb(149, 71, 222);
+  margin-bottom: 1.5rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.intro-card h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-card {
+  background: linear-gradient(135deg, rgba(115, 35, 189, 0.6), rgba(80, 20, 150, 0.6));
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(149, 71, 222, 0.3);
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(149, 71, 222, 0.5);
+  border-color: rgb(149, 71, 222);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgb(149, 71, 222), rgb(100, 50, 180));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2.5rem;
+  color: white;
+  box-shadow: 0 5px 20px rgba(149, 71, 222, 0.4);
+}
+
+.about-card h3 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.interests-section,
+.journey-section {
+  background: linear-gradient(135deg, rgba(115, 35, 189, 0.6), rgba(80, 20, 150, 0.6));
+  border-radius: 15px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(149, 71, 222, 0.3);
+}
+
+.interests-section h3,
+.journey-section h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.interest-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(149, 71, 222, 0.2);
+}
+
+.interest-item:hover {
+  background: rgba(149, 71, 222, 0.2);
+  border-color: rgb(149, 71, 222);
+  transform: translateX(10px);
+}
+
+.interest-emoji {
+  font-size: 2.5rem;
+  min-width: 50px;
+  text-align: center;
+}
+
+.interest-item p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+}
+
+.journey-section p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.journey-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .intro-card {
+    padding: 2rem;
+  }
+
+  .intro-card h2 {
+    font-size: 1.7rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    width: 95%;
+  }
+
+  .intro-card {
+    padding: 1.5rem;
+  }
+
+  .intro-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-icon {
+    font-size: 3rem;
+  }
+
+  .card-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .about-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .interests-section,
+  .journey-section {
+    padding: 1.5rem;
+  }
+
+  .interests-section h3,
+  .journey-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .journey-section p {
+    text-align: left;
+  }
+}
