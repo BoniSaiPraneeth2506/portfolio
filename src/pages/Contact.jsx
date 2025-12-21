@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './Contact.css';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -54,17 +56,30 @@ const Contact = () => {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    const newErrors = validateForm();
-    
-    if (Object.keys(newErrors).length === 0) {
-      // Form is valid
-      console.log('Form submitted:', formData);
+ const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const newErrors = validateForm();
+  if (Object.keys(newErrors).length !== 0) {
+    setErrors(newErrors);
+    return;
+  }
+
+  emailjs
+    .send(
+      process.env.REACT_APP_EMAILJS_SERVICE,
+      process.env.REACT_APP_EMAILJS_TEMPLATE,
+      {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      },
+      process.env.REACT_APP_EMAILJS_PUBLIC
+    )
+    .then(() => {
       setSubmitted(true);
-      
-      // Reset form after 3 seconds
+
       setTimeout(() => {
         setFormData({
           name: '',
@@ -74,10 +89,13 @@ const Contact = () => {
         });
         setSubmitted(false);
       }, 3000);
-    } else {
-      setErrors(newErrors);
-    }
-  };
+    })
+    .catch((error) => {
+      console.error("EmailJS Error:", error);
+      alert("Failed to send message. Try again later.");
+    });
+};
+
 
   return (
     <section id="contact" className="contact-section">
