@@ -101,12 +101,6 @@ const Contact = () => {
     { icon: FaMapMarkerAlt, title: 'Location', value: 'Bhimavaram, Andhra Pradesh' },
   ];
 
-  const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
-  ];
-
   return (
     <SectionWrapper id="contact">
       <div className="space-y-12">

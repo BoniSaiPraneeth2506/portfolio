@@ -2,7 +2,7 @@ import { SiC, SiCplusplus, SiPython, SiJavascript, SiHtml5, SiCss3, SiTailwindcs
 import { TbBrandReactNative, TbApi, TbDatabase, TbDeviceDesktopAnalytics } from 'react-icons/tb';
 import { BiCodeBlock, BiNetworkChart } from 'react-icons/bi';
 import { HiCubeTransparent } from 'react-icons/hi';
-import { MdLayers, MdCode } from 'react-icons/md';
+import { MdLayers } from 'react-icons/md';
 import { FaJava } from 'react-icons/fa';
 import { VscCode } from 'react-icons/vsc';
 
