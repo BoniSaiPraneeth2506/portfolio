@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <>
       {/* Hero Section - Full Screen */}
-      <section id="home" className="min-h-screen flex items-center justify-center px-3 sm:px-6 lg:px-8 pt-20 relative w-full overflow-x-hidden">
+      <section id="home" className="min-h-screen flex items-center justify-center px-3 sm:px-6 lg:px-8 pt-16 relative w-full overflow-x-hidden">
         {/* Vertical Social Media Icons - Left Side */}
         <motion.div
           className="fixed left-10 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center gap-0 z-20"
@@ -125,7 +125,7 @@ const Hero = () => {
           <div className="space-y-5 lg:space-y-6 w-full">
             <motion.div variants={itemVariants} className="space-y-3">
               <motion.p
-                className="text-text-secondary text-sm sm:text-base lg:text-lg font-medium"
+                className="text-text-secondary text-base sm:text-base lg:text-lg font-medium"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
@@ -133,7 +133,7 @@ const Hero = () => {
                 Hi, I am
               </motion.p>
               <motion.h1
-                className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-display break-words"
+                className="text-5xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-display break-words"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
@@ -143,20 +143,20 @@ const Hero = () => {
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-2">
-              <p className="text-base sm:text-lg lg:text-xl text-text-secondary font-medium">
+              <p className="text-lg sm:text-lg lg:text-xl text-text-secondary font-medium">
                 I am a passionate
               </p>
-              <div className="h-10 sm:h-12 lg:h-14">
+              <div className="h-12 sm:h-12 lg:h-14">
                 <span
                   ref={typedElement}
-                  className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-accent font-display break-words"
+                  className="text-[26px] sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-accent font-display break-words"
                 />
               </div>
             </motion.div>
 
             <motion.p
               variants={itemVariants}
-              className="text-text-secondary text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl"
+              className="text-text-secondary text-[16px] sm:text-base lg:text-lg leading-relaxed max-w-2xl"
             >
               Building modern, scalable, and user-friendly web applications with cutting-edge technologies.
               Passionate about creating exceptional digital experiences.
@@ -197,8 +197,8 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="space-y-4">
-            <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold text-text-primary">About</h2>
-            <p className="text-text-secondary text-xs sm:text-sm lg:text-base leading-[1.75]">
+            <h2 className="text-xl sm:text-xl lg:text-2xl font-semibold text-text-primary">About</h2>
+            <p className="text-text-secondary text-[15px] sm:text-sm lg:text-base leading-[1.75]">
               A Passionate and Self-Motivated BTech 3rd year student with a robust foundation in programming languages including C, C++, Java, Python, HTML, CSS, and JavaScript. Proficient in the MERN stack (MongoDB, Express.js, React.js, Node.js), with proven experience building and deploying full-stack web applications as the main developer. Skilled at translating ideas into real-world web, data, and AI projects. Eager to leverage these skills in challenging internships to gain hands-on experience, drive innovation, and contribute value to impactful teams.
             </p>
           </div>
