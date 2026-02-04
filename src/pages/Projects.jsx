@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { projectsData } from '../data/projectsData';
-import { FaGithub, FaExternalLinkAlt, FaCode } from 'react-icons/fa';
-import './Projects.css';
+import SectionWrapper from '../components/SectionWrapper';
+import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
@@ -13,78 +14,72 @@ const Projects = () => {
     : projectsData.filter(project => project.category === filter);
 
   return (
-    <section id="projects" className="projects-section">
-      <div className="section-header">
-        <h1>My Projects</h1>
-        <p className="section-subtitle">Showcasing my work and technical capabilities</p>
-      </div>
+    <SectionWrapper id="projects">
+      <div className="space-y-12">
+        {/* Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="text-center space-y-4"
+        >
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-display text-text-primary">
+            My <span className="text-accent">Projects</span>
+          </h2>
+          <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+            Showcasing my work and technical capabilities
+          </p>
+        </motion.div>
 
-      <div className="filter-buttons">
-        {categories.map((category) => (
-          <button
-            key={category}
-            className={`filter-btn ${filter === category ? 'active' : ''}`}
-            onClick={() => setFilter(category)}
+        {/* Filter Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="flex flex-wrap justify-center gap-3"
+        >
+          {categories.map((category) => (
+            <motion.button
+              key={category}
+              onClick={() => setFilter(category)}
+              className={`px-6 py-2.5 rounded-xl font-medium transition-all duration-200 text-sm ${
+                filter === category
+                  ? 'bg-accent text-white shadow-lg shadow-accent/30'
+                  : 'bg-card text-text-secondary hover:bg-accent/10 hover:text-text-primary border border-border hover:border-accent/50'
+              }`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              {category}
+            </motion.button>
+          ))}
+        </motion.div>
+
+        {/* Projects Grid */}
+        <motion.div
+          layout
+          className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8"
+        >
+          {filteredProjects.map((project, index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
+          ))}
+        </motion.div>
+
+        {filteredProjects.length === 0 && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-center py-20"
           >
-            {category}
-          </button>
-        ))}
+            <p className="text-text-secondary text-lg">No projects found in this category.</p>
+          </motion.div>
+        )}
       </div>
-
-      <div className="projects-grid">
-        {filteredProjects.map((project) => (
-          <div key={project.id} className="project-card" data-aos="fade-up">
-            <div className="project-icon">{project.image}</div>
-            
-            <div className="project-header">
-              <h3>{project.title}</h3>
-              <span className={`status-badge ${project.status.toLowerCase()}`}>
-                {project.status}
-              </span>
-            </div>
-
-            <p className="project-description">{project.description}</p>
-
-            <div className="tech-stack">
-              {project.techStack.map((tech, index) => (
-                <span key={index} className="tech-tag">{tech}</span>
-              ))}
-            </div>
-
-            <div className="project-features">
-              <h4><FaCode /> Key Features:</h4>
-              <ul>
-                {project.features.slice(0, 3).map((feature, index) => (
-                  <li key={index}>{feature}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="project-links">
-              <a 
-                href={project.github} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="project-link github"
-              >
-                <FaGithub /> GitHub
-              </a>
-              {project.liveDemo && (
-                <a 
-                  href={project.liveDemo} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="project-link demo"
-                >
-                  <FaExternalLinkAlt /> Live Demo
-                </a>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+    </SectionWrapper>
   );
 };
 
 export default Projects;
+

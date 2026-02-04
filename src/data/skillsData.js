@@ -1,45 +1,53 @@
+import { SiC, SiCplusplus, SiPython, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiReact, SiNodedotjs, SiExpress, SiSpring, SiMongodb, SiPostgresql, SiGithub, SiIntellijidea, SiGit, SiSocketdotio } from 'react-icons/si';
+import { TbBrandReactNative, TbApi, TbDatabase, TbDeviceDesktopAnalytics } from 'react-icons/tb';
+import { BiCodeBlock, BiNetworkChart } from 'react-icons/bi';
+import { HiCubeTransparent } from 'react-icons/hi';
+import { MdLayers, MdCode } from 'react-icons/md';
+import { FaJava } from 'react-icons/fa';
+import { VscCode } from 'react-icons/vsc';
+
 export const skillsData = {
   programmingLanguages: [
-    { name: 'C', icon: '💻' },
-    { name: 'C++', icon: '⚙️' },
-    { name: 'Java', icon: '☕' },
-    { name: 'Python', icon: '🐍' },
-    { name: 'JavaScript', icon: '⚡' },
+    { name: 'C', icon: SiC },
+    { name: 'C++', icon: SiCplusplus },
+    { name: 'Java', icon: FaJava },
+    { name: 'Python', icon: SiPython },
+    { name: 'JavaScript', icon: SiJavascript },
   ],
   frontend: [
-    { name: 'HTML5', icon: '🌐' },
-    { name: 'CSS3', icon: '🎨' },
-    { name: 'Tailwind CSS', icon: '💨' },
-    { name: 'React.js', icon: '⚛️' },
-    { name: 'React Native', icon: '📱' },
-    { name: 'NativeWind', icon: '🌊' },
+    { name: 'HTML5', icon: SiHtml5 },
+    { name: 'CSS3', icon: SiCss3 },
+    { name: 'Tailwind CSS', icon: SiTailwindcss },
+    { name: 'React.js', icon: SiReact },
+    { name: 'React Native', icon: TbBrandReactNative },
+    { name: 'NativeWind', icon: HiCubeTransparent },
   ],
   backend: [
-    { name: 'Node.js', icon: '🟢' },
-    { name: 'Express.js', icon: '🚂' },
-    { name: 'Spring', icon: '🍃' },
-    { name: 'Spring Boot', icon: '🚀' },
-    { name: 'REST APIs', icon: '🔌' },
+    { name: 'Node.js', icon: SiNodedotjs },
+    { name: 'Express.js', icon: SiExpress },
+    { name: 'Spring', icon: SiSpring },
+    { name: 'Spring Boot', icon: SiSpring },
+    { name: 'REST APIs', icon: TbApi },
   ],
   databases: [
-    { name: 'MongoDB', icon: '🍃' },
-    { name: 'SQL', icon: '🗄️' },
-    { name: 'PostgreSQL', icon: '🐘' },
+    { name: 'MongoDB', icon: SiMongodb },
+    { name: 'SQL', icon: TbDatabase },
+    { name: 'PostgreSQL', icon: SiPostgresql },
   ],
   tools: [
-    { name: 'VS Code', icon: '💙' },
-    { name: 'GitHub', icon: '🐙' },
-    { name: 'IntelliJ IDEA', icon: '🧠' },
-    { name: 'Git', icon: '📚' },
-    { name: 'Socket.IO', icon: '🔌' },
+    { name: 'VS Code', icon: VscCode },
+    { name: 'GitHub', icon: SiGithub },
+    { name: 'IntelliJ IDEA', icon: SiIntellijidea },
+    { name: 'Git', icon: SiGit },
+    { name: 'Socket.IO', icon: SiSocketdotio },
   ],
   concepts: [
-    { name: 'Data Structures', icon: '🗂️' },
-    { name: 'Algorithms', icon: '🧮' },
-    { name: 'OOP', icon: '🎯' },
-    { name: 'MERN Stack', icon: '⚡' },
-    { name: 'Full Stack Development', icon: '🏗️' },
-    { name: 'RESTful APIs', icon: '🔗' },
-    { name: 'WebSocket', icon: '🌐' },
+    { name: 'Data Structures', icon: BiCodeBlock },
+    { name: 'Algorithms', icon: TbDeviceDesktopAnalytics },
+    { name: 'OOP', icon: HiCubeTransparent },
+    { name: 'MERN Stack', icon: MdLayers },
+    { name: 'Full Stack Development', icon: MdLayers },
+    { name: 'RESTful APIs', icon: TbApi },
+    { name: 'WebSocket', icon: BiNetworkChart },
   ],
 };

@@ -1,42 +1,51 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Loader from './components/Loader';
 import Home from './pages/Home';
-import Education from './pages/Education';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
-import Certifications from './pages/Certifications';
 import Contact from './pages/Contact';
-import './App.css';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading time
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Show loader for 2 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-        <main>
-          <Home />
-          <hr />
-          <Education />
-          <hr />
-          <Skills />
-          <hr />
-          <Projects />
-          <hr />
-          <Experience />
-          <hr />
-          <Certifications />
-          <hr />
-          <Contact />
-        </main>
-        <Footer />
-        <ScrollToTop />
-      </div>
+      <AnimatePresence mode="wait">
+        {loading ? (
+          <Loader key="loader" />
+        ) : (
+          <div className="App bg-background min-h-screen" key="content">
+            <Navbar />
+            <main>
+              <Home />
+              <Skills />
+              <Projects />
+              <Experience />
+              <Contact />
+            </main>
+            <Footer />
+            <ScrollToTop />
+          </div>
+        )}
+      </AnimatePresence>
     </Router>
   );
 }
 
 export default App;
+

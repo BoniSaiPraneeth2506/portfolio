@@ -1,4 +1,7 @@
+/* App.css - Minimal styles, most styling via TailwindCSS */
+
 .App {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,20 +9,7 @@
 
 main {
   flex: 1;
-  padding-top: 80px;
+  position: relative;
+  z-index: 1;
 }
 
-main hr {
-  border: 0;
-  height: 0.8px;
-  background-color: rgb(14, 14, 110);
-  margin: 50px 40px;
-  width: calc(100% - 80px);
-}
-
-@media (max-width: 768px) {
-  main hr {
-    margin: 30px 20px;
-    width: calc(100% - 40px);
-  }
-}

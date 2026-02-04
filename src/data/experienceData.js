@@ -1,3 +1,5 @@
+import { MdWork, MdGroups } from 'react-icons/md';
+
 export const experienceData = [
   {
     id: 1,
@@ -14,7 +16,7 @@ export const experienceData = [
       'Participated in code reviews and team meetings'
     ],
     technologies: ['React.js', 'JavaScript', 'CSS3', 'Git'],
-    icon: '💼',
+    icon: MdWork,
     status: 'Completed'
   },
   {
@@ -32,7 +34,7 @@ export const experienceData = [
       'Coordinating technical events'
     ],
     technologies: ['React.js', 'Node.js', 'MongoDB', 'Git'],
-    icon: '👨‍💻',
+    icon: MdGroups,
     status: 'Ongoing'
   }
 ];

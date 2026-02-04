@@ -1,3 +1,6 @@
+import { FaHospital, FaShoppingCart, FaComments } from 'react-icons/fa';
+import { MdDashboard } from 'react-icons/md';
+
 export const projectsData = [
   {
     id: 1,
@@ -13,9 +16,9 @@ export const projectsData = [
       'Multi-role access control'
     ],
     github: 'https://github.com/praneeth/e-prana',
-    liveDemo: '',
+    liveDemo: 'https://e-prana-demo.vercel.app',
     status: 'Ongoing',
-    image: '🏥',
+    icon: FaHospital,
     category: 'Full Stack'
   },
   {
@@ -34,9 +37,9 @@ export const projectsData = [
       'RESTful API architecture'
     ],
     github: 'https://github.com/praneeth/ecommerce',
-    liveDemo: '',
+    liveDemo: 'https://ecommerce-demo.vercel.app',
     status: 'Ongoing',
-    image: '🛒',
+    icon: FaShoppingCart,
     category: 'Full Stack'
   },
   {
@@ -53,9 +56,9 @@ export const projectsData = [
       'Message history and persistence'
     ],
     github: 'https://github.com/praneeth/chat-app',
-    liveDemo: '',
+    liveDemo: 'https://chat-app-demo.vercel.app',
     status: 'Completed',
-    image: '💬',
+    icon: FaComments,
     category: 'Web Development'
   },
   {
@@ -72,9 +75,9 @@ export const projectsData = [
       'Premium mobile UI'
     ],
     github: 'https://github.com/praneeth/portfolio',
-    liveDemo: '',
+    liveDemo: 'https://praneeth-portfolio.vercel.app',
     status: 'Completed',
-    image: '🌐',
+    icon: MdDashboard,
     category: 'Web Development'
   }
 ];
