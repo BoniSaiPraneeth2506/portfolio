@@ -4,7 +4,6 @@ import * as THREE from 'three'
 
 function Particles({ count = 800 }) {
   const mesh = useRef()
-  const light = useRef()
 
   const particles = useMemo(() => {
     const positions = new Float32Array(count * 3)

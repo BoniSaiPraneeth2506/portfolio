@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import {
   AreaChart, Area, LineChart, Line, BarChart, Bar,
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  RadialBarChart, RadialBar, Legend
+  RadialBarChart, RadialBar
 } from 'recharts'
 import channelData from '../../data/youtubeStats.json'
 
