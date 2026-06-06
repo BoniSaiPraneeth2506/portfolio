@@ -19,7 +19,26 @@ export const projectsData = [
     liveDemo: 'https://e-prana-demo.vercel.app',
     status: 'Ongoing',
     icon: FaHospital,
-    category: 'Full Stack'
+    category: 'Full Stack',
+    overview: 'E-Prana is a state-of-the-art hospital management system designed to streamline operations across four distinct user roles. It digitizes the entire workflow from patient onboarding to prescription management and slot booking. The application ensures seamless communication and robust data security, addressing the critical needs of modern healthcare facilities.',
+    role: 'Lead Full Stack Developer',
+    duration: 'Jan 2024 - Present',
+    linkedinPost: 'https://linkedin.com/in/yourprofile',
+    challenges: [
+      'Implementing real-time notifications for medication reminders across web and mobile platforms.',
+      'Designing a secure role-based access control (RBAC) system for four different user types.',
+      'Optimizing database queries for efficient slot management and appointment scheduling.'
+    ],
+    solutions: [
+      'Integrated Firebase Cloud Messaging (FCM) and WebSockets for reliable real-time push notifications.',
+      'Developed a robust JWT-based authentication flow with Spring Security for strict access control.',
+      'Utilized PostgreSQL indexing and optimized queries to ensure lightning-fast scheduling operations.'
+    ],
+    gallery: [
+      'https://placehold.co/800x450/111111/4f8cff?text=Dashboard+Overview',
+      'https://placehold.co/800x450/111111/4f8cff?text=Appointment+Booking',
+      'https://placehold.co/800x450/111111/4f8cff?text=Patient+Records'
+    ]
   },
   {
     id: 2,
@@ -40,7 +59,26 @@ export const projectsData = [
     liveDemo: 'https://ecommerce-demo.vercel.app',
     status: 'Ongoing',
     icon: FaShoppingCart,
-    category: 'Full Stack'
+    category: 'Full Stack',
+    overview: 'This comprehensive E-Commerce platform provides a seamless shopping experience for users while offering powerful administrative tools for store owners. It features secure authentication, dynamic product cataloging, and a reliable checkout process powered by industry-standard payment gateways.',
+    role: 'MERN Stack Developer',
+    duration: 'Aug 2023 - Dec 2023',
+    linkedinPost: 'https://linkedin.com/in/yourprofile',
+    challenges: [
+      'Handling complex cart state management and persistence across user sessions.',
+      'Ensuring secure and reliable payment processing with proper error handling and webhooks.',
+      'Building a highly responsive and performant product catalog with filtering and search capabilities.'
+    ],
+    solutions: [
+      'Implemented Redux Toolkit for robust global state management and synced cart state with local storage.',
+      'Integrated Stripe/Razorpay APIs securely using webhooks to verify transactions on the Node.js backend.',
+      'Created optimized MongoDB aggregation pipelines and implemented pagination for the product catalog.'
+    ],
+    gallery: [
+      'https://placehold.co/800x450/111111/4f8cff?text=Storefront+UI',
+      'https://placehold.co/800x450/111111/4f8cff?text=Shopping+Cart',
+      'https://placehold.co/800x450/111111/4f8cff?text=Admin+Dashboard'
+    ]
   },
   {
     id: 3,
@@ -59,25 +97,25 @@ export const projectsData = [
     liveDemo: 'https://chat-app-demo.vercel.app',
     status: 'Completed',
     icon: FaComments,
-    category: 'Web Development'
-  },
-  {
-    id: 4,
-    title: 'Personal Portfolio Website',
-    description: 'A modern, responsive portfolio website built with React.js featuring smooth animations, dynamic content, and professional design.',
-    techStack: ['React.js', 'CSS3', 'JavaScript', 'HTML5'],
-    features: [
-      'Single Page Application with smooth navigation',
-      'Responsive design for all devices',
-      'Dynamic typing animation',
-      'Smooth scroll effects',
-      'Contact form with validation',
-      'Premium mobile UI'
+    category: 'Web Development',
+    overview: 'A high-performance real-time chat application designed to provide instant messaging capabilities similar to popular chat platforms. It supports live one-to-one messaging, online status indicators, and persistent chat history, all wrapped in a sleek, modern user interface.',
+    role: 'Frontend & Backend Developer',
+    duration: 'May 2023 - Jul 2023',
+    linkedinPost: 'https://linkedin.com/in/yourprofile',
+    challenges: [
+      'Maintaining stable WebSocket connections and handling reconnections seamlessly.',
+      'Designing an efficient database schema for storing and retrieving thousands of messages quickly.',
+      'Updating the UI instantly upon receiving new messages without performance degradation.'
     ],
-    github: 'https://github.com/praneeth/portfolio',
-    liveDemo: 'https://praneeth-portfolio.vercel.app',
-    status: 'Completed',
-    icon: MdDashboard,
-    category: 'Web Development'
+    solutions: [
+      'Utilized Socket.IO for robust real-time bi-directional event-based communication with automatic fallbacks.',
+      'Designed an optimized MongoDB schema with proper indexing for rapid message history retrieval.',
+      'Implemented efficient React state updates and virtualization for rendering long chat lists smoothly.'
+    ],
+    gallery: [
+      'https://placehold.co/800x450/111111/4f8cff?text=Chat+Interface',
+      'https://placehold.co/800x450/111111/4f8cff?text=Active+Users+List',
+      'https://placehold.co/800x450/111111/4f8cff?text=Mobile+Chat+View'
+    ]
   }
 ];

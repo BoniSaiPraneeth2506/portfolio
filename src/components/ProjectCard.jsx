@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaArrowRight } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ project, index }) => {
   const IconComponent = project.icon;
@@ -74,8 +75,16 @@ const ProjectCard = ({ project, index }) => {
           </div>
         )}
 
+        {/* View Details Link */}
+        <Link 
+          to={`/project/${project.id}`}
+          className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-accent/10 hover:bg-accent/20 text-accent border border-accent/20 hover:border-accent/40 rounded-lg transition-all duration-200 text-sm font-semibold mt-auto mb-3"
+        >
+          View Full Details <FaArrowRight className="text-xs" />
+        </Link>
+
         {/* Links */}
-        <div className="flex gap-3 mt-auto">
+        <div className="flex gap-3">
           <motion.a
             href={project.github}
             target="_blank"

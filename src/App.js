@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -10,6 +10,8 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';
+import ProjectDetails from './pages/ProjectDetails';
+import Youtube from './pages/Youtube';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -30,14 +32,22 @@ function App() {
           <Loader key="loader" />
         ) : (
           <div className="App bg-background min-h-screen" key="content">
-            <Navbar />
-            <main>
-              <Home />
-              <Skills />
-              <Projects />
-              <Experience />
-              <Contact />
-            </main>
+            <Routes>
+              <Route path="/" element={
+                <>
+                  <Navbar />
+                  <main>
+                    <Home />
+                    <Skills />
+                    <Projects />
+                    <Experience />
+                    <Contact />
+                  </main>
+                </>
+              } />
+              <Route path="/project/:id" element={<ProjectDetails />} />
+              <Route path="/youtube" element={<Youtube />} />
+            </Routes>
             <Footer />
             <ScrollToTop />
           </div>

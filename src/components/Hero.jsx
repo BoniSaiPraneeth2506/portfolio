@@ -188,7 +188,7 @@ const Hero = () => {
       </section>
 
       {/* About Me Section - Appears on Scroll */}
-      <section className="py-12 px-3 sm:px-6 lg:px-8 w-full overflow-x-hidden">
+      <section id="about" className="py-12 px-3 sm:px-6 lg:px-8 w-full overflow-x-hidden">
         <motion.div
           className="max-w-4xl mx-auto w-full"
           initial={{ opacity: 0, y: 50 }}

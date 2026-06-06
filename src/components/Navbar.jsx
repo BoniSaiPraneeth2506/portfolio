@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,11 +26,50 @@ const Navbar = () => {
   };
 
   const scrollToSection = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      closeMenu();
+      return;
+    }
+
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      closeMenu();
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
+    closeMenu();
+  };
+
+  const handleMobileNavClick = (e, sectionId) => {
+    e.preventDefault();
+    
+    if (location.pathname !== '/') {
+      navigate('/');
+      closeMenu();
+      return;
+    }
+
+    closeMenu();
+    // Wait for the menu to start closing before scrolling to prevent rendering glitches on mobile
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const headerOffset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }, 150);
   };
 
   const navItems = [
@@ -81,6 +122,15 @@ const Navbar = () => {
                 {item.label}
               </motion.a>
             ))}
+            <Link to="/youtube">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-4 py-2 text-white hover:text-white rounded-lg hover:bg-accent/10 transition-all duration-200 font-bold text-sm inline-block"
+              >
+                YouTube (70k+)
+              </motion.div>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -116,17 +166,14 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-card/95 backdrop-blur-xl border-b border-border"
+            className="md:hidden overflow-hidden bg-card/95 backdrop-blur-xl border-b border-border"
           >
             <div className="px-4 py-6 space-y-2">
               {navItems.map((item, index) => (
                 <motion.a
                   key={item.id}
                   href={`#${item.id}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(item.id);
-                  }}
+                  onClick={(e) => handleMobileNavClick(e, item.id)}
                   className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-accent/10 rounded-lg transition-all duration-200 font-medium"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -135,6 +182,17 @@ const Navbar = () => {
                   {item.label}
                 </motion.a>
               ))}
+              
+              <Link to="/youtube" onClick={closeMenu}>
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: navItems.length * 0.05 }}
+                  className="block px-4 py-3 text-white hover:text-white hover:bg-accent/10 rounded-lg transition-all duration-200 font-bold"
+                >
+                  YouTube (70k+)
+                </motion.div>
+              </Link>
             </div>
           </motion.div>
         )}

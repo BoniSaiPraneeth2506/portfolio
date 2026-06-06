@@ -44,18 +44,19 @@ const Skills = () => {
         </motion.div>
 
         {/* Category Tabs */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex flex-wrap justify-center gap-3"
-        >
-          {Object.keys(categories).map((key) => (
-            <motion.button
-              key={key}
-              onClick={() => setActiveCategory(key)}
-              className={`px-6 py-2.5 rounded-xl font-medium transition-all duration-200 text-sm ${
+        <div className="-mx-4 sm:mx-0 px-4 sm:px-0">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="flex overflow-x-auto sm:flex-wrap sm:justify-center gap-3 hide-scrollbar pb-4 sm:pb-0"
+          >
+            {Object.keys(categories).map((key) => (
+              <motion.button
+                key={key}
+                onClick={() => setActiveCategory(key)}
+                className={`flex-shrink-0 whitespace-nowrap px-6 py-2.5 rounded-xl font-medium transition-all duration-200 text-sm ${
                 activeCategory === key
                   ? 'bg-accent text-white shadow-lg shadow-accent/30'
                   : 'bg-card text-text-secondary hover:bg-accent/10 hover:text-text-primary border border-border hover:border-accent/50'
@@ -64,9 +65,10 @@ const Skills = () => {
               whileTap={{ scale: 0.95 }}
             >
               {categories[key]}
-            </motion.button>
-          ))}
-        </motion.div>
+              </motion.button>
+            ))}
+          </motion.div>
+        </div>
 
         {/* Skills Display */}
         <div className="min-h-[400px]">

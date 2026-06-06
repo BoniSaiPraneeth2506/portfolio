@@ -29,6 +29,16 @@
   transform: translateY(-3px) scale(0.95);
 }
 
+.scroll-to-top.youtube-mode {
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
+}
+
+.scroll-to-top.youtube-mode:hover {
+  background: linear-gradient(135deg, #ff3333, #aa0000);
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.5);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

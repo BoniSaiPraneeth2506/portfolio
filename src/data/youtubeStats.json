@@ -1,0 +1,246 @@
+{
+  "channel": {
+    "name": "BSP 4K Status",
+    "handle": "@BSPEditz25",
+    "channelId": "UCuLRjZgxRC9MJ-x1cDE93A",
+    "profileImage": "/channels4_profile.jpg",
+    "tagline": "I build viral content systems",
+    "description": "Creating viral emotional & romantic content that connects millions of hearts across India.",
+    "niche": "Emotional / Romantic Short-Form Content",
+    "joined": "2024-02"
+  },
+  "lifetime": {
+    "totalViews": 99367456,
+    "watchTimeHours": 322100,
+    "subscribers": 62605,
+    "estimatedRevenue": 437.13,
+    "totalVideos": 150,
+    "avgLikeRatio": 99.2,
+    "analyticsFrom": "Feb 9, 2024",
+    "analyticsTo": "Mar 23, 2026"
+  },
+  "realtimeSnapshot": {
+    "viewsLast48h": 554072,
+    "subsLast48h": 62605
+  },
+  "topVideos": [
+    {
+      "title": "Understanding partner | Just Married",
+      "views": 741175,
+      "likes": 20207,
+      "comments": 42,
+      "likeRatio": 99.2,
+      "date": "Mar 20, 2026",
+      "duration": "0:24",
+      "type": "Short",
+      "thumbnail": "https://i.ytimg.com/vi/placeholder1/hqdefault.jpg"
+    },
+    {
+      "title": "Ture Love ❤️💖✨",
+      "views": 19789,
+      "likes": 1130,
+      "comments": 8,
+      "likeRatio": 99.6,
+      "date": "Mar 18, 2026",
+      "duration": "0:43",
+      "type": "Short",
+      "thumbnail": "https://i.ytimg.com/vi/placeholder2/hqdefault.jpg"
+    },
+    {
+      "title": "Okavela oppukopothe 😊❤️💖",
+      "views": 24914,
+      "likes": 957,
+      "comments": 0,
+      "likeRatio": 99.7,
+      "date": "Mar 23, 2026",
+      "duration": "0:18",
+      "type": "Short",
+      "thumbnail": "https://i.ytimg.com/vi/placeholder3/hqdefault.jpg"
+    },
+    {
+      "title": "Broken 💔🥀😢",
+      "views": 4,
+      "likes": 1,
+      "comments": 0,
+      "likeRatio": 100,
+      "date": "Mar 25, 2026",
+      "duration": "0:29",
+      "type": "Short",
+      "thumbnail": "https://i.ytimg.com/vi/placeholder4/hqdefault.jpg",
+      "status": "Scheduled"
+    },
+    {
+      "title": "Tag Your Violent Girl 😂",
+      "views": 57333,
+      "likes": 3200,
+      "comments": 25,
+      "likeRatio": 98.5,
+      "date": "Mar 10, 2026",
+      "duration": "0:30",
+      "type": "Short",
+      "thumbnail": "https://i.ytimg.com/vi/placeholder5/hqdefault.jpg"
+    },
+    {
+      "title": "chee anna neeku ardamkaadha ❤️💖",
+      "views": 4327,
+      "likes": 179,
+      "comments": 0,
+      "likeRatio": 100,
+      "date": "Mar 22, 2026",
+      "duration": "0:29",
+      "type": "Short",
+      "thumbnail": "https://i.ytimg.com/vi/placeholder6/hqdefault.jpg"
+    }
+  ],
+  "monthlyViews": [
+    { "month": "Feb 2024", "views": 12000 },
+    { "month": "Apr 2024", "views": 45000 },
+    { "month": "Jun 2024", "views": 180000 },
+    { "month": "Aug 2024", "views": 320000 },
+    { "month": "Oct 2024", "views": 250000 },
+    { "month": "Dec 2024", "views": 410000 },
+    { "month": "Feb 2025", "views": 520000 },
+    { "month": "Apr 2025", "views": 380000 },
+    { "month": "Jun 2025", "views": 290000 },
+    { "month": "Aug 2025", "views": 450000 },
+    { "month": "Oct 2025", "views": 600000 },
+    { "month": "Nov 2025", "views": 1800000 },
+    { "month": "Dec 2025", "views": 1200000 },
+    { "month": "Jan 2026", "views": 850000 },
+    { "month": "Feb 2026", "views": 720000 },
+    { "month": "Mar 2026", "views": 554072 }
+  ],
+  "monthlyRevenue": [
+    { "month": "Feb 2024", "revenue": 0 },
+    { "month": "Jun 2024", "revenue": 0.5 },
+    { "month": "Oct 2024", "revenue": 1.2 },
+    { "month": "Feb 2025", "revenue": 2.5 },
+    { "month": "Jun 2025", "revenue": 3.0 },
+    { "month": "Aug 2025", "revenue": 4.0 },
+    { "month": "Oct 2025", "revenue": 5.5 },
+    { "month": "Nov 2025", "revenue": 12.0 },
+    { "month": "Dec 2025", "revenue": 15.0 },
+    { "month": "Jan 2026", "revenue": 8.0 },
+    { "month": "Feb 2026", "revenue": 6.5 },
+    { "month": "Mar 2026", "revenue": 5.0 }
+  ],
+  "timeline": [
+    {
+      "date": "Feb 2024",
+      "title": "Channel Born 🚀",
+      "description": "Started BSP 4K Status — uploading emotional & romantic short-form content.",
+      "icon": "rocket",
+      "type": "milestone"
+    },
+    {
+      "date": "May 2024",
+      "title": "First 1K Subscribers 🎯",
+      "description": "Hit the first major milestone. The grind was real, but the community was growing.",
+      "icon": "target",
+      "type": "milestone"
+    },
+    {
+      "date": "Aug 2024",
+      "title": "First Viral Short 💥",
+      "description": "A romantic emotional video exploded — crossing 700K+ views in days.",
+      "icon": "fire",
+      "type": "viral"
+    },
+    {
+      "date": "Oct 2024",
+      "title": "The Dip 📉",
+      "description": "Views dropped to 400 avg per video. Algorithm shifted. Had to rethink strategy.",
+      "icon": "down",
+      "type": "challenge"
+    },
+    {
+      "date": "Jan 2025",
+      "title": "Strategy Shift 🧠",
+      "description": "Switched to trend-based emotional hooks. Focused on first 2-second hook and mobile-first content.",
+      "icon": "brain",
+      "type": "strategy"
+    },
+    {
+      "date": "Jun 2025",
+      "title": "25K Subscribers 🎉",
+      "description": "Consistent posting + emotional storytelling = steady growth. Community becoming loyal.",
+      "icon": "party",
+      "type": "milestone"
+    },
+    {
+      "date": "Nov 2025",
+      "title": "Mega Viral Month 🔥",
+      "description": "1.8M views in a single month! Multiple shorts went viral simultaneously.",
+      "icon": "explosion",
+      "type": "viral"
+    },
+    {
+      "date": "Feb 2026",
+      "title": "50K+ Subscribers 👑",
+      "description": "Crossed 50K subs. Monetization active. Revenue growing month over month.",
+      "icon": "crown",
+      "type": "milestone"
+    },
+    {
+      "date": "Mar 2026",
+      "title": "99M+ Views & Counting 📈",
+      "description": "62.5K subscribers, 99.4M total views, 322K watch hours. The journey continues!",
+      "icon": "chart",
+      "type": "current"
+    }
+  ],
+  "strategy": [
+    {
+      "title": "Hook in 2 Seconds",
+      "description": "First 2 seconds decide everything. Every video opens with an emotional or curiosity hook.",
+      "icon": "⚡"
+    },
+    {
+      "title": "Emotional Storytelling",
+      "description": "Love, heartbreak, relationships — content that makes viewers FEEL something deeply.",
+      "icon": "💔"
+    },
+    {
+      "title": "Mobile-First Content",
+      "description": "9:16 vertical format optimized for Shorts. Every frame designed for phone screens.",
+      "icon": "📱"
+    },
+    {
+      "title": "Trend Surfing",
+      "description": "Riding trending audio, hashtags (#instagram #reels #trending) for maximum discovery.",
+      "icon": "🌊"
+    },
+    {
+      "title": "Consistent Posting",
+      "description": "Multiple uploads per week. Algorithm rewards consistency over sporadic viral hits.",
+      "icon": "📅"
+    },
+    {
+      "title": "Community Building",
+      "description": "Engaging with every comment. Building loyal fans who share and come back for more.",
+      "icon": "🤝"
+    }
+  ],
+  "experiments": {
+    "failed": [
+      { "title": "Random topic uploads", "result": "Low views, no niche authority" },
+      { "title": "Long-form content only", "result": "Audience prefers quick emotional hits" },
+      { "title": "No hashtags", "result": "50% less discovery from search" },
+      { "title": "Posting once a week", "result": "Algorithm penalized — views dropped 70%" }
+    ],
+    "worked": [
+      { "title": "Emotional hooks in first 2s", "result": "3x more completion rate" },
+      { "title": "Consistent niche (love/relationships)", "result": "Steady 10% daily growth" },
+      { "title": "Trend-based audio + hashtags", "result": "Videos appear in Shorts feed 5x more" },
+      { "title": "Daily Shorts uploads", "result": "Algorithm boost — 1.8M views in Nov 2025" }
+    ]
+  },
+  "contentSystem": [
+    { "step": 1, "title": "Idea", "description": "Spot trending emotions, audio, and relationship topics", "icon": "💡" },
+    { "step": 2, "title": "Script", "description": "Write a micro-script with hook → story → emotion", "icon": "📝" },
+    { "step": 3, "title": "Emotion", "description": "Choose the core feeling: love, heartbreak, nostalgia", "icon": "💖" },
+    { "step": 4, "title": "Edit", "description": "4K editing with transitions, text overlays, music sync", "icon": "🎬" },
+    { "step": 5, "title": "Upload", "description": "Optimize title, description, hashtags for Shorts algorithm", "icon": "🚀" },
+    { "step": 6, "title": "Analyze", "description": "Check retention, CTR, likes. Double down on what works", "icon": "📊" }
+  ]
+}

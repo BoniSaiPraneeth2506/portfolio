@@ -96,8 +96,8 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: FaEnvelope, title: 'Email', value: 'praneeth@example.com' },
-    { icon: FaPhone, title: 'Phone', value: '+91 XXXXX XXXXX' },
+    { icon: FaEnvelope, title: 'Email', value: 'saipraneethboni2506@gmail.com' },
+    { icon: FaPhone, title: 'Phone', value: '9515339842' },
     { icon: FaMapMarkerAlt, title: 'Location', value: 'Bhimavaram, Andhra Pradesh' },
   ];
 
