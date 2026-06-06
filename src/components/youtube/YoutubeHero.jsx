@@ -90,7 +90,7 @@ export default function Hero() {
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
         <motion.img
-          src={channelData.channel.profileImage}
+          src={process.env.PUBLIC_URL + channelData.channel.profileImage}
           alt={channelData.channel.name}
           className="hero-profile"
           initial={{ scale: 0, rotate: -180 }}
